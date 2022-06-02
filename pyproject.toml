@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "generic_evm_plugin"
+version = "0.1.0"
+description = "plugin for generic evm"
+authors = ["ca3-caaip"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+senkalib = {git = 'https://github.com/ca3-caaip/senkalib.git', rev = '7d7d82d7077d886f8720b69cab50b026e87fc986' }
+pandas = "^1.4.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+pre-commit = "^2.19.0"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+pytest-mock = "^3.7.0"
+pyright = "^1.1.251"
+black = "^22.3.0"
+isort = "^5.10.1"
+
+[tool.isort]
+profile = "black"

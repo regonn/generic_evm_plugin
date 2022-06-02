@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  generic_evm_plugin:
+    container_name: generic_evm_plugin
+    build: ./
+    volumes:
+      - ./:/app/
+    command: /bin/bash
+    tty: true

@@ -1,0 +1,26 @@
+{
+  "name": "generic_evm_plugin",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "generic_evm_plugin",
+  "workspaceFolder": "/app",
+  "shutdownAction": "stopCompose",
+  "extensions": [
+    "ms-python.python",
+    "ms-python.pylint",
+    "ms-python.vscode-pylance",
+    "naumovs.color-highlight",
+    "github.copilot",
+    "eamodio.gitlens"
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.lintOnSave": true,
+    "python.formatting.provider": "black",
+    "python.venvPath": ".venv"
+  }
+}
