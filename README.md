@@ -50,6 +50,6 @@ $ curl -sSL https://install.python-poetry.org | python -
 $ export PATH="$HOME/.local/bin:$PATH"
 $ poetry config virtualenvs.in-project true && poetry install
 $ poetry shell
-$ python src/main.py chain address covalent_api_key > result.csv
-e.x. $ python src/main.py bsc 0xDa28ecfc40181a6DAD8b52723035DFba3386d26E YOUR_COVALENT_API_KEY
+$ python src/main.py chain address covalent_api_key --explorer_api_key xxxxxxxxxx > result.csv
+e.x. $ python src/main.py bsc 0xDa28ecfc40181a6DAD8b52723035DFba3386d26E YOUR_COVALENT_API_KEY --explorer_api_key YOUR_BSCSCAN_API_KEY
 ```
